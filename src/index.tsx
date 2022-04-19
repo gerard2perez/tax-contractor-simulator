@@ -1,4 +1,3 @@
-import * as React from 'react'
 import ReactDOM from 'react-dom/client'
 import styles from './index.css'
 import styles3 from './index.sass'
@@ -16,5 +15,5 @@ ReactDOM.createRoot(document.getElementById('app') as HTMLElement)
       <h3 className={styles3.Style1}>
         Casa
       </h3>
-    </>,
+    </>
   )
