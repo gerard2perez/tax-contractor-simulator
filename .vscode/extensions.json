@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "syler.sass-indented",
+    "dsznajder.es7-react-js-snippets",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "clinyong.vscode-css-modules",
+    "oderwat.indent-rainbow",
+    "bierner.color-info",
+    "vscode-icons-team.vscode-icons"
+  ]
+}
