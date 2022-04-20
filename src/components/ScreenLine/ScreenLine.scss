@@ -1,0 +1,26 @@
+.ScreenLine {
+  font-size: 1rem;
+  text-align: right;
+  color: rgba(255,255,255,0.6);
+  h2 {
+    font-size: 100%;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    color: rgba(255,255,255,0.4);
+  }
+  h3 {
+    margin: 0;
+    font-size: 150%;
+    display: inline-block;
+  }
+  &:first-child {
+    color: rgba(255,255,255,1);
+    text-align: left;
+    font-size: 1.5rem;
+    h2 {
+      display: block;
+    }
+  }
+
+}

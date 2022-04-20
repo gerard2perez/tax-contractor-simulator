@@ -1,0 +1,24 @@
+$background: #3b4655;
+:root {
+  --background: #{$background};
+  --button-background: #{darken($background, 3%)};
+  --color: white;
+  --fontSize: 1.2rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--color);
+  font-size: var(--fontSize);
+}
+#app {
+  background: var(--background);
+}
+
+body,
+body * {
+  font-family: "Montserrat";
+  user-select: none;
+  // font-weight: bold;
+}

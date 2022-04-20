@@ -1,0 +1,38 @@
+$borderColor: rgba(199, 199, 199, 0.386);
+
+.Button {
+  width: 25%;
+  padding: 0px;
+  padding-bottom: 25%;
+  box-sizing: content-box;
+  position: relative;
+  display: inline-flex;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.Button button {
+  background: var(--button-background);
+  color: var(--color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.AnimateButton {
+  user-select: none;
+}
+
+.AnimateButton:hover,
+.AnimateButton:focus {
+  border-color: $borderColor;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.AnimateButton:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.16) 0 2px 4px;
+}

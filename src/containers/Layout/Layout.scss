@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+.Layout {
+  background: var(--background);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  .Header {
+    flex: 0 0;
+    position: relative;
+  }
+  .Pages {
+    flex: 1 0 100%;
+    position: relative;
+    height: 100%;
+  }
+}
