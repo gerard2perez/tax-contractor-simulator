@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import AppContext from '../../context/AppContext'
 import styles from './ScreenLine.scss'
 type Props = {
   label: string
@@ -6,12 +8,13 @@ type Props = {
   currency?: string
 }
 const ScreenLine = ({ label, value, className, currency }: Props) => {
+  const { usdMode } = useContext(AppContext)
   const formated = new Intl.NumberFormat([
     'en-GB'
     // 'es-MX'
   ], {
     style: 'currency',
-    currency
+    currency: usdMode ? 'USD' : 'MXN'
   }).format(value)
   return (
     <div

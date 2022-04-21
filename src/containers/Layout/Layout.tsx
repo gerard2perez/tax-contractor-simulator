@@ -1,4 +1,5 @@
 import MailIcon from '@mui/icons-material/Mail'
+import { Container } from '@mui/material'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import Drawer from '@mui/material/Drawer'
@@ -48,22 +49,25 @@ function Layout ({ children }: React.PropsWithChildren<any>) {
   )
 
   return (
-      <div className={styles.Layout}>
-        <Header
-          className={styles.Header}
-          toggleDrawer={toggleDrawer(true)}
-          />
-        <div className={styles.Pages}>
-          {children}
-        </div>
-        <Drawer
-          anchor='left'
-          open={state}
-          onClose={toggleDrawer(false)}
-        >
-          {list('left')}
-        </Drawer>
-      </div>
+    <Container
+      className='Layout'
+      disableGutters
+      maxWidth='xs'
+      sx={{ display: 'flex', flex: 1, flexDirection: 'column', flexGrow: 1, height: '100vh', overflow: 'auto' }}
+    >
+      <Header
+        className={styles.Header}
+        toggleDrawer={toggleDrawer(true)}
+        />
+      {children}
+      <Drawer
+        anchor='left'
+        open={state}
+        onClose={toggleDrawer(false)}
+      >
+        {list('left')}
+      </Drawer>
+    </Container>
   )
 }
 

@@ -6,11 +6,15 @@ const config = /** @type { import('webpack').Configuration } */ ({
   devtool: 'inline-source-map',
   mode: 'development',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '/'
   },
   module: {
     rules: [
+      {
+        test: /\.worker\.ts$/,
+        loader: 'worker-loader'
+      },
       {
         exclude: /(node_modules)/,
         loader: 'ts-loader',
