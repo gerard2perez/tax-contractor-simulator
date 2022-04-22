@@ -39,7 +39,7 @@ function Layout ({ children }: React.PropsWithChildren<any>) {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {(links as const).map(({ to, display }) => (
+        {links.map(({ to, display }) => (
           <ListItem button key={`menu-${to}`} component={RouterLink as any} to={to}>
             <ListItemIcon>
               <MailIcon />
