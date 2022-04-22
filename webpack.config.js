@@ -45,7 +45,8 @@ const config = /** @type { import('webpack').Configuration } */ ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      favicon: './src/assets/favicon.svg'
     }),
     new MiniCssExtractPlugin({
       // runtime: true,

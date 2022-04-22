@@ -14,6 +14,10 @@ import styles from './Layout.scss'
 type Anchor = 'top' | 'left' | 'bottom' | 'right'
 
 function Layout ({ children }: React.PropsWithChildren<any>) {
+  const links = [
+    { to: '/', display: 'Calculator' },
+    { to: '/settings', display: 'Settings' }
+  ]
   const [state, setState] = React.useState(false)
   const toggleDrawer = (open: boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -35,12 +39,12 @@ function Layout ({ children }: React.PropsWithChildren<any>) {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {(['/', '/settings'] as const).map((to) => (
+        {(links as const).map(({ to, display }) => (
           <ListItem button key={`menu-${to}`} component={RouterLink as any} to={to}>
             <ListItemIcon>
               <MailIcon />
             </ListItemIcon>
-            <ListItemText primary={'Hello'} />
+            <ListItemText primary={display} />
           </ListItem>
         ))}
       </List>
