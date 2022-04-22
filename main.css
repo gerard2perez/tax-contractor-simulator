@@ -1,0 +1,174 @@
+/*!******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/react-tiger-transition/styles/main.min.css ***!
+  \******************************************************************************************************************************************************************************/
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main-min__react-tiger-transition--container___oHX94 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+.main-min__react-tiger-transition--route___HyJfu {
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  visibility: visible;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.main-min__react-tiger-transition--screen___BWgSz {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+:root {
+  --background: #3b4655;
+  --button-background: #353f4c;
+  --color: white;
+  --fontSize: 1.2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--color);
+  font-size: var(--fontSize);
+}
+
+#index__app___GNsbS {
+  background: var(--background);
+}
+
+body,
+body * {
+  font-family: "Montserrat";
+  user-select: none;
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/containers/Layout/Layout.scss ***!
+  \********************************************************************************************************************************************************/
+.Layout__Layout___JtE3t {
+  background: var(--background);
+  width: 100%;
+  height: 100%;
+}
+.Layout__Layout___JtE3t .Layout__Header___UsshE {
+  flex: 0 0;
+  position: relative;
+}
+.Layout__Layout___JtE3t .Layout__Pages___smM1A {
+  margin-top: 60px;
+  flex: 1 0 100%;
+  height: 100%;
+}
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/ScreenLine/ScreenLine.scss ***!
+  \****************************************************************************************************************************************************************/
+.ScreenLine__ScreenLine___KCz39 {
+  font-size: 1rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.6);
+}
+.ScreenLine__ScreenLine___KCz39 * {
+  vertical-align: middle;
+}
+.ScreenLine__ScreenLine___KCz39 h2 {
+  font-size: 100%;
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.ScreenLine__ScreenLine___KCz39 h3 {
+  margin: 0;
+  font-size: 120%;
+  display: inline-block;
+}
+.ScreenLine__ScreenLine___KCz39:first-child {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 56px;
+  background: #383737;
+}
+.ScreenLine__ScreenLine___KCz39:first-child h2 {
+  display: block;
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/containers/Keyboard/Keyboard.scss ***!
+  \************************************************************************************************************************************************************/
+.Keyboard__ButtonSpace___B2l_h {
+  border: 2px solid transparent;
+  position: relative;
+  width: 24%;
+  padding-bottom: 24%;
+}
+.Keyboard__ButtonSpace___B2l_h > .Keyboard__InnerButton___cxDtt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/containers/Screen/Screen.scss ***!
+  \********************************************************************************************************************************************************/
+.Screen__Screen___kjd7E {
+  flex: 1;
+  position: relative;
+  padding-bottom: 15px;
+}
+.Screen__Screen___kjd7E * {
+  margin: 10px;
+}
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/Home/Home.scss ***!
+  \***********************************************************************************************************************************************/
+.Home__ButtonSpace___uyICb {
+  border: 2px solid transparent;
+  position: relative;
+  width: 24%;
+  padding-bottom: 24%;
+}
+.Home__ButtonSpace___uyICb > .Home__InnerButton___cdowD {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+}
+
+.Home__BigLine___vgvZ0 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.Home__BigLine___vgvZ0 h3 {
+  font-size: 130%;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJtYXBwaW5ncyI6Ijs7O0FBQUE7RUFBSztFQUFnQjtFQUFTO0FBSTlCOztBQUp3QztFQUFtQztFQUFrQjtFQUFXO0VBQVk7RUFBMkI7RUFBbUI7QUFhbEs7O0FBYmtMO0VBQStCO0VBQVk7RUFBTTtFQUFPO0VBQVM7RUFBUTtFQUFXO0VBQWtCO0VBQW1CO0VBQWdCO0VBQW1DO0VBQTJCO0VBQWdDO0VBQXdCO0VBQW9DO0FBK0JyZDs7QUEvQmlmO0VBQWdDO0VBQVc7RUFBWTtFQUFrQjtBQXNDMWpCLEM7Ozs7QUNyQ0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtBQUFGOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUNGOztBQUNBO0VBQ0U7QUFFRjs7QUFDQTs7RUFFRTtFQUNBO0FBRUYsQzs7OztBQ3RCQTtFQUNFO0VBRUE7RUFDQTtBQURGO0FBR0U7RUFDRTtFQUNBO0FBREo7QUFHRTtFQUNFO0VBQ0E7RUFFQTtBQUZKLEM7Ozs7QUNiQTtFQUNFO0VBQ0E7RUFDQTtBQUNGO0FBQUU7RUFDRTtBQUVKO0FBQUU7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBRUo7QUFBRTtFQUNFO0VBQ0E7RUFDQTtBQUVKO0FBQUU7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFFSjtBQURJO0VBQ0U7QUFHTixDOzs7O0FDOUJBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7QUFDRjtBQUFFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBRUosQzs7OztBQ2JBO0VBQ0U7RUFDQTtFQUlBO0FBRkY7QUFERTtFQUNFO0FBR0osQzs7OztBQ1BBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7QUFDRjtBQUFFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBRUo7O0FBRUE7RUFDRTtBQUNGO0FBQUU7RUFDRTtBQUVKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvcmVhY3QtdGlnZXItdHJhbnNpdGlvbi9zdHlsZXMvbWFpbi5taW4uY3NzIiwid2VicGFjazovLy8uL3NyYy9pbmRleC5zY3NzIiwid2VicGFjazovLy8uL3NyYy9jb250YWluZXJzL0xheW91dC9MYXlvdXQuc2NzcyIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TY3JlZW5MaW5lL1NjcmVlbkxpbmUuc2NzcyIsIndlYnBhY2s6Ly8vLi9zcmMvY29udGFpbmVycy9LZXlib2FyZC9LZXlib2FyZC5zY3NzIiwid2VicGFjazovLy8uL3NyYy9jb250YWluZXJzL1NjcmVlbi9TY3JlZW4uc2NzcyIsIndlYnBhY2s6Ly8vLi9zcmMvcGFnZXMvSG9tZS9Ib21lLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiYm9keXtvdmVyZmxvdzpoaWRkZW47bWFyZ2luOjA7cGFkZGluZzowfS5yZWFjdC10aWdlci10cmFuc2l0aW9uLS1jb250YWluZXJ7cG9zaXRpb246cmVsYXRpdmU7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTstd2Via2l0LXBlcnNwZWN0aXZlOjEyMDBweDtwZXJzcGVjdGl2ZToxMjAwcHg7b3ZlcmZsb3c6aGlkZGVufS5yZWFjdC10aWdlci10cmFuc2l0aW9uLS1yb3V0ZXtoZWlnaHQ6MTAwJTt0b3A6MDtsZWZ0OjA7Ym90dG9tOjA7cmlnaHQ6MDt3aWR0aDoxMDAlO3Bvc2l0aW9uOmFic29sdXRlO3Zpc2liaWxpdHk6dmlzaWJsZTtvdmVyZmxvdzpoaWRkZW47LXdlYmtpdC1iYWNrZmFjZS12aXNpYmlsaXR5OmhpZGRlbjtiYWNrZmFjZS12aXNpYmlsaXR5OmhpZGRlbjstd2Via2l0LXRyYW5zZm9ybTp0cmFuc2xhdGVaKDApO3RyYW5zZm9ybTp0cmFuc2xhdGVaKDApOy13ZWJraXQtdHJhbnNmb3JtLXN0eWxlOnByZXNlcnZlLTNkO3RyYW5zZm9ybS1zdHlsZTpwcmVzZXJ2ZS0zZH0ucmVhY3QtdGlnZXItdHJhbnNpdGlvbi0tc2NyZWVue3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7cG9zaXRpb246cmVsYXRpdmU7b3ZlcmZsb3cteTpzY3JvbGx9IiwiJGJhY2tncm91bmQ6ICMzYjQ2NTU7XG46cm9vdCB7XG4gIC0tYmFja2dyb3VuZDogI3skYmFja2dyb3VuZH07XG4gIC0tYnV0dG9uLWJhY2tncm91bmQ6ICN7ZGFya2VuKCRiYWNrZ3JvdW5kLCAzJSl9O1xuICAtLWNvbG9yOiB3aGl0ZTtcbiAgLS1mb250U2l6ZTogMS4ycmVtO1xufVxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvcik7XG4gIGZvbnQtc2l6ZTogdmFyKC0tZm9udFNpemUpO1xufVxuI2FwcCB7XG4gIGJhY2tncm91bmQ6IHZhcigtLWJhY2tncm91bmQpO1xufVxuXG5ib2R5LFxuYm9keSAqIHtcbiAgZm9udC1mYW1pbHk6IFwiTW9udHNlcnJhdFwiO1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbiAgLy8gZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG4iLCJAaW1wb3J0ICcuLi8uLi9zdHlsZXMvdmFyaWFibGVzJztcbi5MYXlvdXQge1xuICBiYWNrZ3JvdW5kOiB2YXIoLS1iYWNrZ3JvdW5kKTtcbiAgLy8gcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICAvLyBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAuSGVhZGVyIHtcbiAgICBmbGV4OiAwIDA7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB9XG4gIC5QYWdlcyB7XG4gICAgbWFyZ2luLXRvcDogNjBweDtcbiAgICBmbGV4OiAxIDAgMTAwJTtcbiAgICAvLyBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICB9XG59XG4iLCIuU2NyZWVuTGluZSB7XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LDAuNik7XG4gICoge1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIH1cbiAgaDIge1xuICAgIGZvbnQtc2l6ZTogMTAwJTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luOiAwO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwwLjQpO1xuICB9XG4gIGgzIHtcbiAgICBtYXJnaW46IDA7XG4gICAgZm9udC1zaXplOiAxMjAlO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuICAmOmZpcnN0LWNoaWxkIHtcbiAgICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwxKTtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xuICAgIHBvc2l0aW9uOiBzdGlja3k7XG4gICAgdG9wOiA1NnB4O1xuICAgIGJhY2tncm91bmQ6ICMzODM3Mzc7XG4gICAgaDIge1xuICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgfVxuICB9XG5cbn1cbiIsIi5CdXR0b25TcGFjZSB7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHdpZHRoOiAyNCU7XG4gIHBhZGRpbmctYm90dG9tOiAyNCU7XG4gID4gLklubmVyQnV0dG9uIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIGZvbnQtc2l6ZTogMnJlbTtcbiAgfVxufVxuIiwiLlNjcmVlbiB7XG4gIGZsZXg6IDE7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgKiB7XG4gICAgbWFyZ2luOiAxMHB4O1xuICB9XG4gIHBhZGRpbmctYm90dG9tOiAxNXB4O1xufVxuIiwiLkJ1dHRvblNwYWNlIHtcbiAgYm9yZGVyOiAycHggc29saWQgdHJhbnNwYXJlbnQ7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgd2lkdGg6IDI0JTtcbiAgcGFkZGluZy1ib3R0b206IDI0JTtcbiAgPiAuSW5uZXJCdXR0b24ge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgYm90dG9tOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgcmlnaHQ6IDA7XG4gICAgZm9udC1zaXplOiAycmVtO1xuICAgIC8vIGJhY2tncm91bmQ6IHJnYmEoMCwwLDAsMC4xKTtcbiAgfVxufVxuLkJpZ0xpbmUge1xuICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwwLjgpO1xuICBoMyB7XG4gICAgZm9udC1zaXplOiAxMzAlO1xuICB9XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/
