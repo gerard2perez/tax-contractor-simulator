@@ -1,13 +1,15 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import path from 'path'
 
 const config = /** @type { import('webpack').Configuration } */ ({
   entry: './src/index.tsx',
   devtool: 'inline-source-map',
   mode: 'development',
   output: {
+    path: path.resolve('dist'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: './'
   },
   module: {
     rules: [
