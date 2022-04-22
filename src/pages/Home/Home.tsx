@@ -1,39 +1,30 @@
-import BackspaceIcon from '@mui/icons-material/Backspace'
-import DragHandleIcon from '@mui/icons-material/DragHandle'
-import Button from '@mui/material/Button'
-import Grid from '@mui/material/Grid'
 import Paper from '@mui/material/Paper'
 import { useContext, useEffect, useState } from 'react'
 import ScreenLine from '../../components/ScreenLine/ScreenLine'
+import Keyboard from '../../containers/Keyboard/Keyboard'
 import Screen from '../../containers/Screen/Screen'
 import AppContext from '../../context/AppContext'
+import useSalaryUSD from '../../hooks/useSalaryUSD'
 import { useWorkerCalculator } from '../../hooks/useWorkerCalculator'
 import styles from './Home.scss'
-import { KeyboardKeys } from './keyboard.keys'
-import useSalaryUSD from './useSalaryUSD'
-function w (value, key, { handler, props }: any) {
-  return {
-    c: <Button
-        {...props}
-        className={styles.InnerButton}
-        onClick={() => handler(key)
-      }>
-        {value}
-      </Button>,
-    k: key || value
-  }
-}
 function transform<T> (usMode: boolean, data: T) {
   return Object.keys(data).reduce((res, key) => {
     res[key] = data[key] / (usMode ? 20 : 1)
     return res
   }, {}) as T
 }
-const App = () => {
-  const { usdMode, toggleMode, toggleBenefit, fullScreen, toggleFullScreen, ...ctx } = useContext(AppContext)
+const Home = () => {
+  const {
+    usdMode,
+    fullScreen,
+    toggleMode,
+    toggleBenefit,
+    toggleFullScreen,
+    ...ctx
+  } = useContext(AppContext)
   const {
     salary,
-    appendNumberToSalary: us,
+    appendNumberToSalary: onKey,
     setSalary
   } = useSalaryUSD({ salary: 0 })
   const {
@@ -61,52 +52,37 @@ const App = () => {
   }, [salary])
   const onDelete = event => {
     setReset(true)
-    us(event)
+    onKey(event)
   }
-  const { usNet, mxGross, mxReal, mxNet } = transform(usdMode, state)
-  const ri = () => _ri(usdMode ? salary * 20 : salary, { usdMode, ...ctx })
-  const m = (icon, key, handler, variant, color) => w(icon, key, { handler, props: { color, variant } })
-  const x = (icon, key) => m(icon, key, onDelete, 'contained', 'error')
-  const n = (value) => m(value, value, us, undefined, undefined)
-  const s = (icon, key) => m(icon, key, ri, 'contained', 'success')
-  const keyBoard = [
-    n(7), n(8), n(9),
-    n(4), n(5), n(6),
-    n(1), n(2), n(3),
-    s(<DragHandleIcon/>, 'd'), n(0), x(<BackspaceIcon/>, KeyboardKeys.delete)
-  ]
+  const { usNet, mxGross, mxReal, mxNet, mxExtra } = transform(usdMode, state)
+  const onEnter = () => _ri(usdMode ? salary * 20 : salary, { usdMode, ...ctx })
 
   const lines = [
-    { label: 'Gross Income', value: salary, currency: 'USD' },
-    { label: 'US Net Income', value: usNet, currency: 'USD' },
-    { label: 'Mx Gross Salary', value: mxGross, currency: 'MXN', className: styles.BigLine },
-    { label: 'Mx Net Income', value: mxNet, currency: 'USD' },
-    { label: 'Mx Real Income', value: mxReal, currency: 'USD' }
+    { label: 'Contractor Income', value: salary },
+    { label: 'Contractor Net Income', value: usNet },
+    { label: 'Gross Salary', value: mxGross, className: styles.BigLine, tooltip: 'Required Salary (+benefits) that matches the contractor net income.' },
+    { label: 'Net Salary', value: mxNet, tooltip: 'The money in you pocket' },
+    { label: 'Benefits+', value: mxExtra, tooltip: 'All the extra money that you receive in benefits' }
   ]
   return (
     <Paper elevation={5} sx={{
       display: 'flex',
       flexDirection: 'column',
       flex: 1,
-      background: 'linear-gradient(-45deg, #121212, #3c3b3b)',
-      margin: '20px'
+      background: 'linear-gradient(-45deg, #121212, #3c3b3b)'
     }}>
       <Screen >
         {lines.map(line => (
           <ScreenLine key={line.label} {...line} />
         ))}
       </Screen>
-      <Paper elevation={10}>
-      <Grid container spacing={0}>
-        {keyBoard.map(({ c, k }) => (
-          <Grid className={styles.ButtonSpace} item xs={4} key={`key-id-${k}`}>
-            {c}
-          </Grid>
-        ))}
-      </Grid>
-      </Paper>
+      <Keyboard
+        onKey={onKey}
+        onDelete={onDelete}
+        onEnter={onEnter}
+        />
     </Paper>
   )
 }
 
-export default App
+export default Home

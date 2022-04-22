@@ -29,7 +29,7 @@ const LawBenefits = () => {
   } = useContext(AppContext)
   return (
     <Box component="form"
-      sx={{ flexGrow: 1 }}
+      sx={{ flexGrow: 1, marginBottom: '54px' }}
     >
       <Card>
         <CardHeader title="Mexican Law Benefits" />
@@ -63,10 +63,20 @@ const LawBenefits = () => {
               />
             </Grid>
             <Grid item xs={6}>
+              <Item>Social Security</Item>
+            </Grid>
+          </Grid>
+          <br/><Divider /><br/>
+          <Typography variant="body1" color="text.secondary">
+            This benefits do not affect salary calculatio.<br/>
+          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
               <TextField label="Sunday Premium"
                 type="number"
                 variant="filled"
                 defaultValue={SundayPremium}
+                disabled
                 InputProps={{
                   endAdornment: <InputAdornment position="end">%</InputAdornment>
                 }}
@@ -83,15 +93,6 @@ const LawBenefits = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6}>
-              <Item>Social Security</Item>
-            </Grid>
-          </Grid>
-          <br/><Divider /><br/>
-          <Typography variant="body1" color="text.secondary">
-            This benefits do not affect salary calculatio.<br/>
-          </Typography>
-          <Grid container spacing={2}>
             <Grid item xs={6}>
               <Item>Maternity/Paternity Leave</Item>
             </Grid>

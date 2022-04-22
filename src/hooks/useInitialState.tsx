@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useFullScreen } from '../pages/Home/useFullScreen'
+import { useFullScreen } from './useFullScreen'
 // export type AppState = {
 
 //   usdMode: boolean
@@ -27,6 +27,7 @@ const initialState = {
   RestDays: 2
 }
 export type AppState = typeof initialState
+export type Benefits = Omit<AppState, 'usdMode'>
 const useInitialState = () => {
   const { fullScreen, toggleFullScreen } = useFullScreen()
   const [state, setState] = useState(initialState)

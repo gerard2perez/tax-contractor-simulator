@@ -12,7 +12,7 @@ type Props = {
 function Header ({ toggleDrawer }: Props) {
   const { usdMode, toggleMode, fullScreen, toggleFullScreen } = React.useContext(AppContext)
   return (
-    <AppBar position='static'>
+    <AppBar position='sticky'>
       <Toolbar>
         <IconButton onClick={toggleDrawer} aria-label="menu">
           <MenuIcon />

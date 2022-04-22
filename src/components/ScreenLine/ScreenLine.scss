@@ -2,6 +2,9 @@
   font-size: 1rem;
   text-align: right;
   color: rgba(255,255,255,0.6);
+  * {
+    vertical-align: middle;
+  }
   h2 {
     font-size: 100%;
     display: inline-block;
@@ -11,13 +14,16 @@
   }
   h3 {
     margin: 0;
-    font-size: 150%;
+    font-size: 120%;
     display: inline-block;
   }
   &:first-child {
     color: rgba(255,255,255,1);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 56px;
+    background: #383737;
     h2 {
       display: block;
     }

@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { NEWGTOCedular } from '../../tax/taxes/cedular/gto-cedular'
-import { NewSalary } from '../../tax/taxes/regimen/salary'
-import { RegimenServicios } from '../../tax/taxes/regimen/services'
 // import WorkerBuilder from '../../web-worker'
-import { KeyboardKeys } from './keyboard.keys'
+import { KeyboardKeys } from '../containers/Keyboard/keyboard.keys'
+import { NEWGTOCedular } from '../tax/taxes/cedular/gto-cedular'
+import { NewSalary } from '../tax/taxes/regimen/salary'
+import { RegimenServicios } from '../tax/taxes/regimen/services'
 
 export type Taxes = ReturnType<NEWGTOCedular<RegimenServicios>['calculateTaxes']>
 export type Taxes2 = ReturnType<NEWGTOCedular<NewSalary>['calculateTaxes']>

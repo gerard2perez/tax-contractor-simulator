@@ -6,12 +6,14 @@ const initialState = {
   usNet: 0,
   mxGross: 0,
   mxNet: 0,
-  mxReal: 0
+  mxReal: 0,
+  mxExtra: 0
 }
 function useWorkerCalculator () {
   const [state, setState] = useState(initialState)
   useEffect(() => {
     worker.onmessage = (message) => {
+      console.log(message.data)
       setState({ ...state, ...message.data })
     }
   }, [])
