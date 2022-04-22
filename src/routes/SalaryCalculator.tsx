@@ -9,7 +9,7 @@ const SalaryCalculator = () => {
   const initialState = useInitialState()
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter>
+      <BrowserRouter basename="/tax-contractor-simulator">
         <AppTheme>
           <Layout>
             <Routes>
